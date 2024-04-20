@@ -1,0 +1,82 @@
+:root{
+    /* Root font size for rem, makes it so that:
+       1.0 rem === 10 px, 1.6 === 16px etc. */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+
+    --nav-color: gray;
+}
+
+html, body, .mainContainer {
+    height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: "Optima", sans-serif;
+    font-weight: 800;
+    font-size: 7rem;
+}
+
+p,a{
+    font-family: "Optima", sans-serif;
+    font-weight: 400;
+    font-size: 3.2rem;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8% 5%;
+    text-align: center;
+}
+
+.logo{
+    width: 300px;
+    height: 300px;
+}
+
+.navigation{
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.navButton{
+    width: 20px;
+    height: 20px;
+    margin: 8px;
+    background-color: transparent;
+    border:1px solid var(--nav-color);
+    border-radius: 50%;
+}
+
+.currentSection {
+    background-color: var(--nav-color);
+    color: #5bbad5;
+}
+
+#contactSen::after{
+    content: "slushten.com";
+    display: inline;
+    text-decoration: underline;
+}
