@@ -20,13 +20,25 @@ html, body, .mainContainer {
 h1{
     font-family: "Optima", sans-serif;
     font-weight: 800;
-    font-size: 7rem;
+    font-size: 4rem;
+}
+
+h2{
+    font-family: "Optima", sans-serif;
+    font-weight: 800;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: "Optima", sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
 }
 
 p,a{
     font-family: "Optima", sans-serif;
     font-weight: 400;
-    font-size: 3.2rem;
+    font-size: 2rem;
 }
 
 a{
@@ -40,13 +52,19 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 8% 5%;
+    padding: 8% 40px;
     text-align: center;
 }
 
 .logo{
-    width: 300px;
-    height: 300px;
+    width: 150px;
+    height: 150px;
+}
+
+.logoLine{
+    stroke:#020202;
+    stroke-width:13;
+    stroke-linecap:round;
 }
 
 .navigation{
@@ -79,4 +97,36 @@ section{
     content: "slushten.com";
     display: inline;
     text-decoration: underline;
+}
+
+#portfolioContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolioItem{
+    padding: 16px;
+    margin-top: 32px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+
+.inline{
+    display: inline;
+}
+
+.portHeader{
+    display: inline;
+    margin-top: 16px;
+}
+
+.share{
+    width: 16px; 
+    height: 16px;
 }
