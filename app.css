@@ -110,7 +110,38 @@ section{
 .portfolioItem{
     padding: 16px;
     margin-top: 32px;
+    width: 230px
 }
+
+.portfolioItem h3{
+    font-size: 2.2rem;
+}
+
+.share{
+    width: 16px; 
+    height: 16px;
+}
+
+@media screen and (max-width: 554px){
+    .portfolioItem h3{
+        font-size: 1.2rem;
+    }
+
+    .portfolioItem p{
+        font-size: 1.2rem;
+    }
+
+    .portfolioItem{
+        margin-top: 6px;
+        width: 120px;
+        height: 216px;
+    }
+
+    .share{
+        width: 12px; 
+        height: 12px;
+    }
+}   
 
 img{
     width: 100px;
@@ -124,9 +155,4 @@ img{
 .portHeader{
     display: inline;
     margin-top: 16px;
-}
-
-.share{
-    width: 16px; 
-    height: 16px;
 }
